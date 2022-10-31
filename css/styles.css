@@ -309,7 +309,6 @@ img {
 }
 
 .project-item {
-  border: 1px solid #eeeeee;
   flex-basis: calc(100% / 3 - var(--portfolio-gap));
   margin-top: var(--portfolio-gap);
   margin-left: var(--portfolio-gap);
@@ -317,6 +316,8 @@ img {
 
 .project-content {
   padding: 31px 24px 27px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .project-title {
