@@ -214,7 +214,7 @@ img {
 flex-basis: calc((100% - (var(--portfolio-gap) * (var(--item) - 1 ))) / var(--item));
 }
 
-/*----------------- teem---------------------- */
+/*----------------- team---------------------- */
 .team {
   background-color: var(--second--bg--button--color);
   padding: 94px 0;
