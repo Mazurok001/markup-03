@@ -8,6 +8,7 @@
   --footer--hero--bg--color: #2f303a;
   --primery--font: 'Roboto', sans-serif;
   --portfolio-gap: 30px;
+  --item: 3;
 }
 
 body {
@@ -170,13 +171,13 @@ img {
   padding: 94px 0;
 }
 
-.benefits .benefits-item {
-  width: 270px;
-}
-
 .benefits-list {
   display: flex;
   justify-content: space-between;
+}
+
+.benefits .benefits-item {
+  width: 270px;
 }
 
 .benefits-title {
@@ -205,7 +206,12 @@ img {
 
 .work-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--portfolio-gap);
+}
+
+.work-item {
+flex-basis: calc((100% - (var(--portfolio-gap) * (var(--item) - 1 ))) / var(--item));
 }
 
 /*----------------- teem---------------------- */
@@ -225,9 +231,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: var(--portfolio-gap);
+  --item: 4;
 }
 .card {
-  flex-basis: calc((100% - (var(--portfolio-gap)*3))/4);
+flex-basis: calc((100% - (var(--portfolio-gap) * (var(--item) - 1 ))) / var(--item));
   padding-bottom: 30px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
